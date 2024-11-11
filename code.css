@@ -1,0 +1,106 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: black;
+    font-family: Arial, sans-serif;
+}
+
+.main {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 10px;
+    height: 100vh;
+}
+
+.partone,
+.parttwo {
+    padding: 20px;
+    min-height: 100%;
+}
+
+.partone {
+    width: 70%;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.parttwo {
+    width: 30%;
+    background-color: #0f3577;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+/* Default styling for the image */
+.parttwo div img {
+    border-radius: 50%;
+    height: 100px;
+    width: 100px;
+    margin: 20px auto;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .main {
+        flex-direction: column;
+    }
+    
+    .partone,
+    .parttwo {
+        width: 100%;
+        padding: 15px;
+    }
+
+    .parttwo div img {
+        margin: 0 auto;
+    }
+}
+
+@media (min-width: 320px) and (max-width: 768px) {
+    .partone {
+        padding: 15px;
+        width: 100%;
+    }
+
+    .parttwo {
+        padding: 15px;
+        width: 100%;
+    }
+}
+
+/* Styling adjustments for text and spacing */
+.one, .three, .para, .para2, .para3, .contact, .name, .pro, .location, .sum, .sump, .exp, .ui {
+    padding: 10px;
+}
+
+.line {
+    width: 100%;
+    height: 2px;
+    background-color: black;
+    margin: 15px 0;
+}
+
+.two {
+    background-color: white;
+    height: 2px;
+    margin: 0 5px;
+}
+
+.p3 {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 3px;
+}
+
+.ui {
+    color: #072355;
+    padding-top: 5px;
+}
